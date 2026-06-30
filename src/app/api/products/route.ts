@@ -1,7 +1,7 @@
 import { error } from "console";
 import { NextRequest, NextResponse } from "next/server";
 import pool from "../../../lib/db";
-import { isAdmin } from "@/src/lib/auth";
+// import { isAdmin } from "@/src/lib/auth";
 
 export const runtime = "nodejs";
 
@@ -23,14 +23,14 @@ function createSlug(name: string) {
 }
 
 export async function POST(req: NextRequest) {
-      const admin = await isAdmin();
+    //   const admin = await isAdmin();
 
-  if (!admin) {
-    return NextResponse.json(
-      { error: "Admin only" },
-      { status: 403 }
-    );
-  }
+//   if (!admin) {
+//     return NextResponse.json(
+//       { error: "Admin only" },
+//       { status: 403 }
+//     );
+//   }
     const client = await pool.connect()
 
     try {
