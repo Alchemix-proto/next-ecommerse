@@ -1,0 +1,31 @@
+export type Product = {
+  id: number;
+  name: string;
+  slug: string;
+  description: string;
+  brand: string | null;
+  model_number: string | null;
+  sku: string | null;
+  price: string;
+  sale_price: string | null;
+  stock: number;
+  category_id: number | null;
+  category_name: string | null;
+  main_image_url: string | null;
+  gender: string | null;
+  strap_material: string | null;
+  dial_color: string | null;
+  case_size: string | null;
+  warranty: string | null;
+  is_featured: boolean;
+  is_active: boolean;
+  created_at: string;
+  updated_at: string;
+};
+export type AuthUser = {
+  id: number;
+  name: string;
+  email: string;
+  phone: string | null;
+  role: "admin" | "customer";
+};
