@@ -138,7 +138,7 @@ export default async function Navbar() {
                       </Link>
                     )}
 
-                    <LogOutButton />
+                    <LogOutButton redirectTo="/login" />
                   </div>
                 </div>
               </details>

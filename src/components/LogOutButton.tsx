@@ -5,7 +5,7 @@ import { useState } from "react";
 
 
 export default function LogoutButton({ redirectTo = "/login" }: {redirectTo:string}) {
-  const router = useRouter();
+  const router = useRouter();   
   const [loading, setLoading] = useState(false);
 
   async function handleLogout() {
