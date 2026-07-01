@@ -4,6 +4,7 @@ import pool from "@/src/lib/db";
 import { Product } from "@/src/types/product";
 import Link from "next/link";
 
+export const dynamic = "force-dynamic";
 async function getProducts() : Promise<Product[]> {
   const r = await pool.query(
     `SELECT p.id,

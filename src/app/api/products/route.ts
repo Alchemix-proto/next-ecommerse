@@ -4,6 +4,7 @@ import pool from "../../../lib/db";
 // import { isAdmin } from "@/src/lib/auth";
 
 export const runtime = "nodejs";
+export const dynamic = "force-dynamic";
 
 type UploadedImage = {
     imageUrl: string;

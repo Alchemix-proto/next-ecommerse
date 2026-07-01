@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Roboto, Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/Navbar";
-
+export const dynamic = "force-dynamic";
 const roboto = Roboto({
   variable: "--font-roboto",
   subsets: ["latin"],
